@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Friend Age Calculator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="calculator-container">
+    <h1>Friend Age Calculator</h1>
+    <div class="generate">
+        <button id="generate-friends">Generate Number of Friends</button>
+    </div>
+    <div class="flex-container">
+        <div>
+            <select id="calculation-choice" name="calculation-choice" style="display:none;">
+                <option value="total">Total Age</option>
+                <option value="average">Average Age</option>
+                <option value="youngest">Youngest Friend(s)</option>
+                <option value="oldest">Oldest Friend(s)</option>
+            </select>
+        </div>
+        <div class="input-fields">
+            <form id="friend-form">
+                <div id="friend-forms"></div>
+                <button type="submit" style="display:none;" id="submit" class="submit-btn">Submit</button>
+                <button id="reset" style="display:none;" class="reset-btn">Reset</button>
+            </form>
+        </div>
+        <div id="results" class="results"></div>
+    </div>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
+
